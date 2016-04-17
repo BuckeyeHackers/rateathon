@@ -5,8 +5,9 @@
 	<% @organizations.each do |event| %>
 		<div class="event-banner">
 			<span class="event-content">
-				<h2 class="event-title"><%=event.name%></h2>
-				<span class="rating-<%=event.rating%>"></span>
+        <h2 class="event-title"><%=event.name%>
+          <span class="fa"><%= stars(event.rating) %></span>
+        </h2>
 			</span>
 		</div>
 	<% end %>
