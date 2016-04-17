@@ -5,11 +5,11 @@ default: &default
 
 development:
   <<: *default
-  database: rateathon-dev
+  database: rateathon_dev
 
 test:
   <<: *default
-  database: rateathon-test
+  database: rateathon_test
 
 production:
   <<: *default
