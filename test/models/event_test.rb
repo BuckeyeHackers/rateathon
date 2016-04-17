@@ -1,7 +1,11 @@
 require 'test_helper'
 
 class EventTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  setup do
+    @one = events(:one)
+  end
+
+  test "#rating" do
+    assert_equal(1.4, @one.rating)
+  end
 end
