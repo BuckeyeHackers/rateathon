@@ -1,0 +1,14 @@
+<div class="content">
+<div class="title-bar">
+</div>
+<div class="event-window">
+	<% @events.each do |event| %>
+		<div class="event-banner">
+			<span class="event-content">
+				<h2 class="event-title"><%=event.name%></h2>
+				<span class="rating-<%=event.rating%>"></span>
+			</span>
+		</div>
+	<% end %>
+</div>
+</div>
