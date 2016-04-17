@@ -1,11 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  user_id: 1
-  review_id: 1
-  value: 1
+  user: two
+  review: one
+  value: -1
 
 two:
-  user_id: 1
-  review_id: 1
+  user: one
+  review: two
+  value: 1
+
+three:
+  user: two
+  review: two
   value: 1

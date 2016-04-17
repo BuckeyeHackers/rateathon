@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  date: 2016-04-17
+  date: 2015-04-17
   name: MyString
-  organization_id: 1
+  organization: one
 
 two:
   date: 2016-04-17
   name: MyString
-  organization_id: 1
+  organization: one
