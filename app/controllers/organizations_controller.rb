@@ -2,7 +2,11 @@ class OrganizationsController < ApplicationController
   before_action :set_organization, only: [:show, :update, :destroy]
 
   def index
-    @organizations = Organization.all
+    if params[:sort] == "rating"
+      @organizations = Organization.all.sort_by {|x| -x.rating}
+    else
+      @organizations = Organization.all
+    end
   end
 
   def show
