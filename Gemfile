@@ -29,6 +29,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Bootstrap sass for pretty
 gem 'bootstrap-sass'
 
+# Use Devise for authy goodness
+gem 'devise'
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
