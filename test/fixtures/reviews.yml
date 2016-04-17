@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  event_id: 1
+  swag: 1
+  food: 1
+  environment: 1
+  prizes: 1
+  resources: 1
+  comment: MyText
+
+two:
+  user_id: 1
+  event_id: 1
+  swag: 3
+  food: 2
+  environment: 2
+  prizes: 1
+  resources: 1
+  comment: MyText
