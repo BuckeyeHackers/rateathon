@@ -1,3 +1,33 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+.nav{
+  display:flex;
+  margin-left:5em;
+}
+.container-fluid{
+  display:flex;
+  align-items:flex-end;
+}
+.event-window{
+  .event-banner{
+    border-bottom: 1px solid black;
+    display:flex;
+    padding:5px;
+    &:nth-of-type(2){
+      background-color: rgba(0,0,0,0.3);
+    }
+    .logo {
+      height:100px;
+      width:100px;
+    }
+    .event-content{
+      text-align:center;
+      margin:0 auto;
+      .star{
+        color:yellow;
+      }
+    }
+  }
+}
