@@ -19,3 +19,13 @@ two:
   prizes: 1
   resources: 1
   comment: MyText
+
+three:
+  user: one
+  event: two
+  swag: 1
+  food: 1
+  environment: 1
+  prizes: 1
+  resources: 1
+  comment: MyText
