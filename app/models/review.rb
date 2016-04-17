@@ -1,7 +1,7 @@
 class Review < ActiveRecord::Base
   belongs_to :event
   belongs_to :user
-  has_many :votings
+  has_many :votings, dependent: :destroy
 
   def rating
     rating_fields = [:swag, :food, :environment, :prizes, :resources ]
