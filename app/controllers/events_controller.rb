@@ -2,7 +2,11 @@ class EventsController < ApplicationController
   before_action :set_event, only: [:show, :update, :destroy]
 
   def index
-    @events = Event.all
+    if params[:sort] == "date"
+      @events = Event.order(date: :desc)
+    else
+      @events = Event.all
+    end
   end
 
   def show
