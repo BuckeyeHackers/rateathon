@@ -1,9 +1,6 @@
 class ReviewsController < ApplicationController
+  before_action :set_event
   before_action :set_review, only: [:show, :update, :destroy]
-
-  def index
-    @reviews = Review.all
-  end
 
   def show
   end
@@ -40,6 +37,10 @@ class ReviewsController < ApplicationController
   end
 
   private
+
+    def set_event
+      @event = Event.find(params[:event_id])
+    end
 
     def set_review
       @review = Review.find(params[:id])

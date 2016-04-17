@@ -1,0 +1,15 @@
+<div class="content">
+  <h2><%= @event.name %></h2>
+  <div class="fa">
+    <% @reviews.each do |review| %>
+      <table>
+        <tr><td>Swag        </td><td><%= stars(review.swag) %></td></tr>
+        <tr><td>Food        </td><td><%= stars(review.food) %></td></tr>
+        <tr><td>Environment </td><td><%= stars(review.environment) %></td></tr>
+        <tr><td>Prizes      </td><td><%= stars(review.prizes) %></td></tr>
+        <tr><td>Resources   </td><td><%= stars(review.resources) %></td></tr>
+      </table>
+      <blockquote><%= review.comment %></blockquote>
+    <% end %>
+  </div>
+</div>

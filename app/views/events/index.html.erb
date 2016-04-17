@@ -6,7 +6,7 @@
 				<img src="http://placehold.it/100x100">
 			</div>
 			<div class="event-content">
-				<h2 class="event-title"><%=event.name%></h2>
+				<h2 class="event-title"><%= link_to event.name, event %></h2>
 				<span class="fa star"><%= stars(event.rating) %></span>
 			</div>
 		</div>

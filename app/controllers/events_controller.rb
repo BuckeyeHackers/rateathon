@@ -2,14 +2,15 @@ class EventsController < ApplicationController
   before_action :set_event, only: [:show, :update, :destroy]
 
   def index
-    if params[:sort] == "date"
-      @events = Event.order(date: :desc)
+    if params[:sort] == "rating"
+      @events = Event.all.sort_by { |x| -x.rating }
     else
-      @events = Event.all
+      @events = Event.order(:date)
     end
   end
 
   def show
+    @reviews = @event.reviews
   end
 
   def edit

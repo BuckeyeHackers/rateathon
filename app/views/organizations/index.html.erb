@@ -5,10 +5,13 @@
 	<% @organizations.each do |event| %>
 		<div class="event-banner">
 			<span class="event-content">
-        <h2 class="event-title"><%=event.name%>
-          <span class="fa"><%= stars(event.rating) %></span>
+        <h2 class="event-title">
+          <%= link_to event do %>
+            <%= event.name %>
+            <span class="fa"><%= stars(event.rating) %></span>
+          <% end %>
         </h2>
-			</span>
+      </span>
 		</div>
 	<% end %>
 </div>
